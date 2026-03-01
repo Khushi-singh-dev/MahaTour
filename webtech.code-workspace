@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "webtech",
+			"path": "."
+		},
+		{
+			"name": "to do app (31 jan 2026)",
+			"path": "../practice purpose/to do app (31 jan 2026)"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "webtech"
+	}
+}

@@ -1,0 +1,314 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f5f7f7;
+    color: black;
+    padding-bottom: 50px;
+    font-family: 'Poppins',sans-serif;
+}
+
+nav{
+    height: 70px;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: space-around;
+    line-height: 60px;
+    position: sticky;
+    top: 0px;
+    z-index: 1000;
+}
+
+.logo{
+    color: rgb(86, 13, 255);
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.nav-links{
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
+}
+
+#openSignup{
+    color: rgb(86, 13, 255);
+    border: none;
+    background-color: #f7f7f7;
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.1s;
+}
+
+.nav-links a:hover{
+    transform: scale(1.02);
+    color: rgb(63, 0, 209);
+    cursor: pointer;
+}
+
+#openSignup:hover{
+    transform: scale(1.03);
+}
+
+#secondary-btn{
+    color: rgb(63, 0, 209);
+    border: 2px solid rgb(13, 0, 43);
+    background-color: #f7f7f7;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 8px;
+    margin-left: 15px;
+    transition: 0.1s;
+}
+
+#secondary-btn:hover{
+    transform: scale(1.03);
+    color: rgb(86, 13, 255);
+}
+
+.button{
+    margin-left: 25px;
+}
+
+.btn{
+    color: rgb(255, 255, 255);
+    border: none;
+    background-color: #8011ff;
+    border: 2px solid #8011ff;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+    margin-bottom: 125px;
+    transition: 0.1s;
+    animation: bounce 1.35s infinite;
+}
+
+.Contact-btn{
+    color: rgb(255, 255, 255);
+    border: none;
+    background-color: #8011ff;
+    border: 2px solid #8011ff;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+    transition: 0.1s;
+    margin-left: 100px;
+}
+
+
+.Contact-btn:hover{
+    background-color: #6a0dff;
+    color: rgb(255, 255, 255);
+    border: 2px solid #8011ff;
+}
+
+.bttn{
+    color: rgb(255, 255, 255);
+    border: none;
+    background-color: #8011ff;
+    border: 2px solid #8011ff;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    transition: 0.1s;
+}
+
+.bttn:hover{
+    background-color: #6a0dff;
+    color: rgb(255, 255, 255);
+    border: 2px solid #8011ff;
+}
+
+.contain{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 50%;
+    margin-top: 50px;
+    margin-left: 400px;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.5);
+}
+
+.contain input{
+    border: 2px solid #8011ff;
+    padding: 8px 15px;
+    border-radius: 4px;
+}
+
+.contain textarea{
+    border: 2px solid #8011ff;
+    padding: 8px 15px;
+    border-radius: 4px;
+}
+
+@keyframes bounce {
+    0%{
+        margin-top: 0px;
+    }
+    50%{
+        margin-top: 20px;
+    }
+    100%{
+        margin-top: 0px;
+    }
+}
+
+.plan-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.btn:hover{
+    background-color: #6a0dff;
+    color: rgb(255, 255, 255);
+    border: 2px solid #8011ff;
+}
+
+.Hero{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+}
+
+.Hero h1{
+    margin-top: 80px;
+    font-size: 40px;
+    font-weight: 900;
+    color: #000;
+}
+
+.Hero p{
+    margin-bottom: 40px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #adadad;
+    padding: 50px;
+}
+
+.plan{
+    margin-bottom: 40px;
+    margin-top: 40px;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 15px;
+}
+
+footer{
+    position: fixed;
+    bottom: 0px;
+    height: 50px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    line-height: 50px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(6px);
+  background: rgba(0, 0, 0, 0.4);
+  justify-content: center;
+  align-items: center;
+}
+
+/* ===== MODAL BOX ===== */
+.modal-content {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  width: 350px;
+  text-align: center;
+  animation: slideDown 0.3s ease;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.modal-content h2 {
+  margin-bottom: 20px;
+}
+
+/* ===== INPUTS ===== */
+.modal-content input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.modal-content input:focus {
+  border-color: #4e73df;
+  outline: none;
+}
+
+/* ===== BUTTON ===== */
+.modal-content button {
+  width: 100%;
+  padding: 10px;
+  background: #4e73df;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.modal-content button:hover {
+  background: #2e59d9;
+}
+
+/* ===== CLOSE BUTTON ===== */
+.close-btn {
+  float: right;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+/* ===== MESSAGE ===== */
+#formMessage {
+  margin-top: 10px;
+  font-size: 14px;
+}
