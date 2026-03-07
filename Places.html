@@ -1,58 +1,139 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scsale=1.0" />
     <title>Tourism in Maharashtra</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <nav>
-        <div class="logo">MahaTour</div>
-        <div class="nav-links">
-            <a href="index.html">Home</a>
-            <a href="Planning.html">Plan your trip</a>
-            <a href="Places.html">Places to go</a>
-            <a href="Activities.html">Activities</a>
-            <a href="Contact.html">Contact Us</a>
-            <div class="button">
-                <button id="openSignup">Sign Up</button>
-                <button id="secondary-btn">Log In</button>
-            </div>
+      <div class="hamburger" id="hamburger" onclick="toggleMenu()">&#9776;</div>
+      <div class="logo">MahaTour</div>
+      <div class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="Planning.html">Plan your trip</a>
+        <a href="Places.html">Places to go</a>
+        <a href="Activities.html">Activities</a>
+        <a href="Contact.html">Contact Us</a>
+        <div class="button">
+          <button id="openSignup"  class="primary-btn">Sign Up</button>
+          <button id="openLogin" class="secondary-btn">Log In</button>
         </div>
+        <!-- Modal -->
+        <div id="signupModal" class="modal">
+          <div class="modal-content">
+            <span class="close-btn" id="closeSignup">&times;</span>
+            <h2>Create Account</h2>
+
+            <form id="signupForm">
+              <input
+                type="text"
+                id="username"
+                placeholder="Username"
+                required
+              />
+              <input type="email" id="email" placeholder="Email" required />
+              <input
+                type="password"
+                id="password"
+                placeholder="Password"
+                required
+              />
+              <button type="submit">Sign Up</button>
+              <p id="formMessage"></p>
+            </form>
+          </div>
+        </div>
+        <div id="loginModal" class="modal">
+          <div class="modal-content">
+            <span class="close-btn" id="closelogin">&times;</span>
+            <h2>Create Account</h2>
+
+            <form id="loginForm">
+              <input
+                type="text"
+                id="username"
+                placeholder="Username"
+                required
+              />
+              <input type="email" id="email" placeholder="Email" required />
+              <input
+                type="password"
+                id="password"
+                placeholder="Password"
+                required
+              />
+              <button type="submit">Log In</button>
+              <p id="formMessage"></p>
+            </form>
+          </div>
+        </div>
+      </div>
     </nav>
-    <section class="plan">
-        
-        <h1>Places to go</h1>
-        <p>Maharashtra offers a diverse array of tourist destinations, ranging from the historic caves of Ajanta and Ellora to the scenic hill stations of Mahabaleshwar and Lonavala.</p>
-        <div class="plan-container">
-    <section class="plan">
-        <img src="https://i.ytimg.com/vi/grCJ8--tgsI/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCisQVMoHxBXSn97e6tRBNplTiyFQ" height="250px" width="300px">
-        <h2>Ajanta & Ellora Caves:: </h2>
-        <p>Explore the UNESCO World Heritage Ajanta and Ellora Caves, Elephanta Caves, and various forts like Raigad Fort and Pratapgad Fort.</p>
-        <button class="bttn">view more</button>
+    <section class="Hero">
+      <h1>Places to go in Maharashtra</h1>
     </section>
-    <section class="plan">
-        <img src="https://cdn.britannica.com/26/84526-050-45452C37/Gateway-monument-India-entrance-Mumbai-Harbour-coast.jpg" height="250px" width="300px">
-        <h2>Mumbai:</h2>
-        <p>Visit the Tadoba-Andhari Tiger Reserve, Sanjay Gandhi National Park, or picturesque hill stations such as Mahabaleshwar, Lonavala, and Matheran.</p>
-        <button class="bttn">view more</button>
-    </section>
-     <section class="plan">
-        <img src="https://www.onacheaptrip.com/wp-content/uploads/Amazing-view-from-Arthur-Seat-Mahabaleshwar.jpeg" height="250px" width="300px">
-        <h2>Mahabaleshwar & Panchgani: </h2>
-        <p>Plan visits to revered sites like the Shirdi Sai Baba Temple, Trimbakeshwar Temple (a Jyotirlinga shrine), or the Ashtavinayaka temples.</p>
-        <button class="bttn">view more</button>
-    </section>
-     <section class="plan">
-        <img src="https://i.ytimg.com/vi/3691tiwDSXs/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLD8tl_hcbuwRPOfoTueaqGYQFfhVg" height="250px" width="300px">
-        <h2>Lonavala & Khandala:</h2>
-        <p>Enjoy water sports in Alibaug, Tarkarli, or Dapoli, or go trekking in the Sahyadri mountains at locations like Harishchandragad fort.</p>
-        <button class="bttn">view more</button>
-    </section>
-    </div>
-        <button class="bttn">Places to go</button>
+      <div class="plan-container">
+        <section class="plan">
+          <img
+            src="https://i.ytimg.com/vi/grCJ8--tgsI/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCisQVMoHxBXSn97e6tRBNplTiyFQ"
+            height="250px"
+            width="300px"
+          />
+          <h2>Ajanta & Ellora Caves:</h2>
+          <p>
+            Explore the UNESCO World Heritage Ajanta and Ellora Caves, Elephanta
+            Caves, and various forts like Raigad Fort and Pratapgad Fort.
+          </p>
+          <a href="Planning.html" class="btn">view more</a>
+        </section>
+        <section class="plan">
+          <img
+            src="https://cdn.britannica.com/26/84526-050-45452C37/Gateway-monument-India-entrance-Mumbai-Harbour-coast.jpg"
+            height="250px"
+            width="300px"
+          />
+          <h2>Mumbai:</h2>
+          <p>
+            Visit the Tadoba-Andhari Tiger Reserve, Sanjay Gandhi National Park,
+            or hill stations such as Mahabaleshwar, Lonavala, and
+            Matheran.
+          </p>
+          <a href="Planning.html" class="btn">view more</a>
+        </section>
+        <section class="plan">
+          <img
+            src="https://www.onacheaptrip.com/wp-content/uploads/Amazing-view-from-Arthur-Seat-Mahabaleshwar.jpeg"
+            height="250px"
+            width="300px"
+          />
+          <h2>Mahabaleshwar & Panchgani:</h2>
+          <p>
+            Plan visits to revered sites like the Shirdi Sai Baba Temple,
+            Trimbakeshwar Temple, or the Ashtavinayaka
+            temples.
+          </p>
+          <a href="Planning.html" class="btn">view more</a>
+        </section>
+        <section class="plan">
+          <img
+            src="https://i.ytimg.com/vi/3691tiwDSXs/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLD8tl_hcbuwRPOfoTueaqGYQFfhVg"
+            height="250px"
+            width="300px"
+          />
+          <h2>Lonavala & Khandala:</h2>
+          <p>
+            Enjoy water sports in Alibaug, Tarkarli, or Dapoli, or go trekking
+            in the Sahyadri mountains at locations like Harishchandragad fort.
+          </p>
+          <a href="Planning.html" class="btn">view more</a>
+        </section>
+        </div>
     </section>
     <footer>
-        &copy; 2026 MahaTour | Made by khushi for Web Designing Competition
+      &copy; 2026 MahaTour | Made by khushi for Web Designing Competition
     </footer>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
