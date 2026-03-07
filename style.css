@@ -312,7 +312,6 @@ footer {
   outline: none;
 }
 
-/* ===== BUTTON ===== */
 .modal-content button {
   width: 100%;
   padding: 10px;
@@ -335,12 +334,13 @@ footer {
   cursor: pointer;
 }
 
-/* ===== MESSAGE ===== */
 #formMessage {
   margin-top: 10px;
   font-size: 14px;
 }
 
+
+/* Responsiveness */
 @media (max-width: 768px) {
   * {
     margin: 0;
