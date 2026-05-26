@@ -19,10 +19,10 @@ https://khushi-singh-dev.github.io/MahaTour/
 
 # 📸 Preview
 
-![MahaTour Preview](images/mahatourimg.jpeg)
+![MahaTour Preview](images/1st_rank_website.jpg)
 
 ```md
-![MahaTour Preview](images/mahatourimg.jpeg)
+![MahaTour Preview](images/1st_rank_website.jpg)
 ```
 
 ---
